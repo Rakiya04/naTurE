@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --overlay-color: rgb(41, 86, 41);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+
+            /*-----HOME PAGE-----*/
+
+/*-----title-----*/
+header .logo1
+{
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+/*-----home bg video*/
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-color);
+  mix-blend-mode: overlay;
+}
+
+.text
+{
+  position: relative;
+  z-index: 10;
+  padding: 100px;
+  text-align: center;
+}
+
+.text h2
+{
+  font-size: 2em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  padding-bottom: 30px;
+}
+
+.text p{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 400;
+    max-width: 900px;
+    text-align: justify;
+    padding-bottom: 30px;
+    padding-left: 400px;
+}
+
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+
+/*-----nav-bar-----*/
+nav {
+    background-color: rgba(132, 131, 131, 0.5);
+    padding: 2% 3%; 
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration:none;
+}
+
+
+
+
+
+ /* ------About-1------ */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+.title p{
+    font-size: 16px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-1{
+    width: 89%;
+    height: auto;
+}
+
+
+.img-2{
+    width: 95%;
+    height: auto;
+    
+}
+
+.About-1 .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+.p2{
+    color: #7c7c7c;
+    padding-bottom: 30px;
+}
+
+.About-1 .ctn {
+    display: inline-block;
+    font-size: 1em;
+    background: var(--overlay-color);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s; ;
+}
+
+.ctn:hover{
+  letter-spacing: 6px;
+}
+
+
+
+/*------ About-2------*/
+.About-2 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(36, 35, 35, 0.7), rgba(27, 105, 67, 0.7)), url('./img/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    mix-blend-mode: overlay;
+}
+
+.About2-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.About2-content h1 {
+    font-size: 36px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.About2-content p {
+    color: rgb(221, 221, 221);
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.About-2 .ctn {
+    display: inline-block;
+    font-size: 1em;
+    background: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s; ;
+}
+
+
+/*----About-3-----*/
+.content-col {
+    width: 40%;
+
+}
+.image-col {
+    width: 60%;
+}
+.tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 40px;
+    color: #484872;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+.content-col .line {
+    margin-left: -1px;
+}
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+.content-col .ctn {
+    margin-left: -100px;
+}
+
+/*----Footer----*/
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #000000;
+    text-align: center;
+}
+
+.contact-info, .social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px; /* Adjust the icon size as needed */
+    height: 30px;
+}
+
+
+
+
+
+/* Animations */
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.05);
+}
+.ctn:hover {
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #00000056;
+    letter-spacing: 6px;
+}
+li:hover {
+    color: #fc036b;
+    cursor: pointer;
+}
+
+
+
+            /*-----Sl Wild Life introduction----*/
+/*----Logo----*/
+header .logo
+{
+    color: #020202;
+    cursor: pointer;
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+
+/*body*/
+.slwl{
+    background: url(./img/bg.jpeg);
+}            
+
+/*---Parks----*/
+
+.national-park{
+    background: url(./img/pexels-viridiana-rivera-11490212.jpg)
+}
+
+.national-park h2{
+    color: #f6f3f3;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 32px;
+}
+
+.park-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+
+.park-images img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.park-info {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.park-map {
+    height: 300px;
+    padding-left: 50px;
+}
+
+/*----Table----*/
+.image-table{
+    background: url(./img/pexels-pixabay-247477.jpg);
+}
+
+
+.table-container {
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #849bf4;
+}
+
+
+            /*-------Department of Wild Life Conservation------*/
+
+.slwldc{
+    background: url(./img/bg.jpe);
+}
+
+/*---Overlay---*/
+.overlay2
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(106, 66, 27, 0.603);
+  mix-blend-mode: overlay;
+}
+
+/*---Our Mission---*/
+.mission {
+    text-align: center;
+    font-size: 28px;
+    color: #11911e;
+    padding-top: 30px
+   
+}
+
+.About-4{
+    background: url(./img/pexels-isaac-garcia-9497440.jpg);
+    background-size: cover;
+}
+
+.mission p{
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/*---Key objective section----*/
+
+.mission ol {
+    font-size: 16px;
+    text-align: left;
+    color: rgb(234, 220, 220);
+    padding-left: 20px;
+}
+
+.keyob ol li{
+    padding-top: 10px;
+}
+
+/*----Photo Grid----*/
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    
+}
+
+
+            /*--------Sri Lankan Leopard--------*/
+
+
+.sll{
+    background: url(/img/bgl.jpg);
+}
+
+
+/*Sub topics*/
+.sll h1{
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+/*Venues*/
+
+.venue-container, .threat-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+
+.venue {
+    width: 33%;
+    border: 2px solid #212020;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.venue h1{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.venue p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.venue img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 10px;
+}    
+
+
+/*Threats*/
+
+.threat img {
+    max-width: 100%;
+    height: 40vh;
+    padding-top: 10px;
+} 
+.l1{
+    padding-left: 100px;
+}
+
+.threat {
+    width: 50%;
+    border: 2px solid #212020;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.threat h1{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.threat p{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.threat a{
+    margin-left: 100px;
+}
+
+.leo{
+    background: url(/img/bgl2.jpeg);
+    background-size: cover;
+}
+
+
+
+
+
+
+/*Learn more tag in leopard*/
+.threat a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #439d67;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  
+
+}
+.threat a:hover
+{
+  letter-spacing: 6px;
+}
+
+
+
+
+            /*------Sri Lankan Animals-------*/
+
+.sla h1{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile device */
+@media only screen and (max-width:840px){
+    
+
+                     /*------Home page------*/   
+    .logo1 {
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 20px;
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 10px;
+    align-items: center;
+    }
+
+    .logo{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding-left: 100px;
+    padding-top: 30px;
+
+    }
+
+    .nav-links ul {
+    padding: 0;
+    text-align: center;
+    }
+
+    .nav-links ul li {
+    display: block;
+    margin-bottom: 10px;
+    }
+
+
+
+    .text h2{
+    text-align: center;
+    margin-top: -50px;
+    }
+
+    .text p{
+    width: 100%;
+    padding-inline-start: 1px;
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 10px;
+
+    }
+
+
+    /* About-1 */
+    .row {
+    flex-direction: column;
+    }
+    .row .col {
+    margin: 20px auto;
+    }
+    .col img {
+    max-width: 90%;
+    }
+    /* About-2 */
+    .About2-content {
+    width: 100%;
+    text-align: left;
+    }
+
+    .About2-content p {
+    font-size: 12px;
+    }
+
+    .About2-content h1 {
+    text-align: center;
+    }
+
+    .About2-image img{
+    display: none;
+
+    }
+
+    /*About-3*/
+    .content-col h1{
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    }
+
+    .image-gallery {
+    justify-content: center;
+    align-items: center;
+    }
+    .image-gallery img {
+    width: 90%;
+    }
+    .footer {
+    padding: 10px;
+    }
+
+
+                        /*-----SLWL Page-----*/
+    /*--maps--*/
+    iframe{
+    width: 100%;
+    padding-right: 50px;
+    }
+
+    /*Table*/
+    .image-table{
+    font-size: 10px;
+    }
+
+    .image-table img{
+    width: 200px;
+    }
+
+
+
+
+                        /*----SL leopard page-----*/
+    .venue-container, .threat-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    }
+
+    .venue-container .venue{
+    width: 300px;
+    }
+
+    .threat-container .threat{
+    width: 300px;
+    }
+
+
+    .leo h1{
+    color: white;
+    }
+
+}
+
+
+  /*----Newsletter Subscription Form----*/
+
+  .newsletter {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .newsletter h3 {
+    margin-bottom: 10px;
+  }
+  
+  #newsletterForm {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #nwlemail {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4c84af;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4d55ac;
+  }
+
+
+
+
+
+
+  [contenteditable="true"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+ 
+
+  

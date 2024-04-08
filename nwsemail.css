@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #c79e69;
+    color: rgb(255, 255, 255);    
+}
+
+h2 {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(21, 9, 9);
+}
+
+#emails {
+    list-style-type:decimal;
+    padding: 0;
+}
+
+.emailItem {
+    background-color: #665f5f;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.emailItem:hover {
+    background-color: #000000;
+}

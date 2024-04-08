@@ -1,0 +1,341 @@
+/* Goolge Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* ===== Global ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.yp{
+    background: url(img/bg.jpeg);
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body , html {
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+
+}
+
+li, a{
+    color: white;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(77, 55, 8, 0.7)), url('./img/forest\ &\ tall\ trees.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.header-content h1 {
+    font-size: 64px;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: #5e3144;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.menu-btn,.close-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.intro-section {
+    background-color: #f5f5f5;
+}
+
+.wildlife-section {
+    background-color: #e0f7fa;
+}
+
+.conservation-section {
+    background-color: #c8e6c9;
+}
+
+
+/*------intro------*/
+
+.intro-section{
+    max-width: 100%;
+    background:url(/img/THE\ FAIRY\ SWAN.jpeg) ;
+}
+
+
+.intro-section h2{
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 32px;
+}
+
+.intro-section p{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+.yala-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+
+.yala-img img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.park-map {
+    height: 300px;
+    padding-left: 30px;
+}
+
+
+/*--------Wild life--------*/
+
+.wildlife-section{
+    max-width: 80%;
+    background:url(/img/THE\ FAIRY\ SWAN.jpeg) ;
+}
+
+
+.wildlife-section h2{
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.wildlife-section p{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+
+/*--------Conservation-------*/
+
+.conservation-section{
+    max-width: 100%;
+    background:url(/img/THE\ FAIRY\ SWAN.jpeg) ;
+}
+
+
+.conservation-section h2{
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.conservation-section p{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+.conservation-section img{
+    width: 100%;
+}
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+
+    img {
+        margin-top: 5px;
+    }
+
+     /*--maps--*/
+    iframe{
+        width: 100%;
+        padding-right: 50px;
+    }
+}
+
+
+/* Mobile device */
+@media only screen and (max-width:850px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #548f7e;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+
+     /*--maps--*/
+    iframe{
+    width: 100%;
+    padding-right: 50px;
+    }
+}
+
+/* Animations */
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/*----Footer----*/
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #000000;
+    text-align: center;
+}
+
+.contact-info, .social-links {
+    margin-bottom: 20px;
+}
+
+.footer p{
+    color: gray;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px; /* Adjust the icon size as needed */
+    height: 30px;
+}
+
+
+/*----Newsletter----*/
+.newsletter {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .newsletter h3 {
+    margin-bottom: 10px;
+  }
+  
+  #newsletterForm {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #email {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4c84af;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4d55ac;
+  }

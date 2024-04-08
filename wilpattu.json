@@ -1,0 +1,28 @@
+{
+    "introduction": {
+      "title": "Introduction",
+      "images": [
+        "/img/w1.jpeg",
+        "/img/w2.jpeg",
+        "/img/w3.jpeg"
+      ],
+      "description": "Wilpattu National Park, located in the northwest of Sri Lanka, stands as a testament to the country's rich natural heritage. Spanning over 1,300 square kilometers, it's the largest national park in Sri Lanka, renowned for its beauty and diverse ecosystems. Wilpattu is characterized by its unique landscape, featuring a combination of dense scrub jungles, open grasslands, and numerous lakes. This park provides a haven for wildlife, making it a prime destination for nature enthusiasts and photographers. The park's name translates to 'land of lakes,' aptly describing its scenic charm. Wilpattu is home to a variety of fauna, including elephants, sloth bears, spotted deer, and numerous birds. Its remote location enhances the sense of wilderness. As one of Sri Lanka's oldest parks, Wilpattu not only captivates with its biodiversity but also serves as a crucial conservation area.",
+      "id": "wintro" 
+    },
+    "wildlife": {
+      "title": "Wildlife",
+      "images": [
+        "/img/w5.jpeg",
+        "/img/w8.jpeg",
+        "/img/w6.jpeg"
+      ],
+      "description": "Wilpattu National Park, situated in the northwest of Sri Lanka, is a sprawling sanctuary renowned for its diverse wildlife. Spanning over 1,300 square kilometers, Wilpattu boasts a unique landscape and rich biodiversity. The park's inhabitants include leopards, elephants, sloth bears, water buffalo, spotted deer, and a variety of bird species like painted storks, white ibises, and the endangered Sri Lankan junglefowl. Wilpattu National Park is also a significant cultural and historical site.",
+      "id": "wlife" 
+    },
+    "conservation": {
+      "title": "Conservation",
+      "description": "Conservation efforts within Wilpattu National Park focus on safeguarding its unique biodiversity and promoting sustainable practices. The park's diverse habitats provide a haven for wildlife. Conservation initiatives involve habitat preservation, anti-poaching measures, and community engagement. Wilpattu National Park stands as a testament to successful conservation practices, highlighting the importance of preserving natural habitats for future generations.",
+      "id": "wcon" 
+    }
+  }
+  
